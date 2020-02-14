@@ -25,6 +25,9 @@ def find_the_cheese(arr)
   index = 0 
   value = ''
   while index < cheese_types.length
-    value = arr.include(cheese_types[index]) ? cheese_types[index] : nil
+    if arr.include(cheese_types[index])
+      return cheese_types[index]
+    end
   end
+  return nil
 end
