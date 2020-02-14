@@ -27,6 +27,7 @@ def find_the_cheese(arr)
     if arr.include?(cheese_types[index])
       return cheese_types[index]
     end
+    index += 1
   end
   return nil
 end
