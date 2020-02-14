@@ -24,7 +24,7 @@ def find_the_cheese(arr)
   # arr.include?(val)
   index = 0 
   while index < cheese_types.length
-    if arr.include(cheese_types[index])
+    if arr.include?(cheese_types[index])
       return cheese_types[index]
     end
   end
