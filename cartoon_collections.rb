@@ -10,10 +10,11 @@ def long_planeteer_calls(arr)
   index = 0 
   return_value = true
   while index < arr.length 
-    return_value = arr[index].length > 4 ? true : false
-    index += 1 
+    if arr[index].length > 4 
+      return true 
+    end
   end
-  return_value
+  return false
 end
 
 def find_the_cheese# code an argument here
